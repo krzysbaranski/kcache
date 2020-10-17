@@ -11,7 +11,7 @@ setup(
     package_dir={'': 'src'},
     packages=['kcache'],
     url='https://github.com/krzysbaranski/kcache',
-    license='TBD',
+    license='GNU Lesser General Public License Version 3',
     author='Krzysztof Baranski',
     author_email='baranski5@gmail.com',
     description='Cache',
