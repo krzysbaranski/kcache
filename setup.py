@@ -3,7 +3,7 @@ from setuptools import setup
 
 REQUIREMENTS = {
     'base': [],
-    'test': []
+    'test': ['pytest==6.1.1']
 }
 setup(
     name='kcache',
@@ -16,5 +16,6 @@ setup(
     author_email='baranski5@gmail.com',
     description='Cache',
     install_requires=REQUIREMENTS['base'],
-    tests_require=REQUIREMENTS['test']
+    tests_require=REQUIREMENTS['test'],
+    extras_require={'test': REQUIREMENTS['test']}
 )
