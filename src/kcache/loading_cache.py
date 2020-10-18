@@ -14,8 +14,11 @@ class LoadingCache(BaseCache):
         if self._loader:
             self._loader.close()
 
-    def __init__(self, loader: CacheLoader, initial_cache: dict = {}) -> None:
-        self._dict: dict = initial_cache
+    def __init__(self, loader: CacheLoader, initial_cache: dict = None) -> None:
+        if initial_cache:
+            self._dict: initial_cache
+        else:
+            self._dict = dict()
         self._loader: CacheLoader = loader
 
     def get_all_present(self, keys) -> dict:
