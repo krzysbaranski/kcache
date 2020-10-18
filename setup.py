@@ -7,7 +7,7 @@ REQUIREMENTS = {
 }
 setup(
     name='kcache',
-    version='0.0.1',
+    version='0.0.2',
     package_dir={'': 'src'},
     packages=['kcache'],
     url='https://github.com/krzysbaranski/kcache',
