@@ -28,7 +28,6 @@ jobs:
       env:
         TWINE_USERNAME: ${{ secrets.PYPI_TEST_USERNAME }}
         TWINE_PASSWORD: ${{ secrets.PYPI_TEST_PASSWORD }}
-        TWINE_REPOSITORY: https://test.pypi.org/legacy/
       run: |
         python setup.py sdist bdist_wheel
-        twine upload dist/*
+        twine upload --repository-url "https://test.pypi.org/legacy/" dist/*
