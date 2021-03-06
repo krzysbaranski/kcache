@@ -28,21 +28,21 @@ class CacheBuilderImpl(CacheBuilder):
         return self
 
     def removal_listener(self, listener) -> CacheBuilder:
-        raise NotImplemented()
+        raise NotImplementedError()
         # return self
 
     def refresh_after_write(self, duration_ms: int) -> CacheBuilder:
-        raise NotImplemented()
+        raise NotImplementedError()
         # return self
 
     def expire_after_access(self, duration_ms: int) -> CacheBuilder:
-        raise NotImplemented()
+        raise NotImplementedError()
         # return self
 
     def expire_after_write(self, duration_ms: int) -> CacheBuilder:
-        raise NotImplemented()
+        raise NotImplementedError()
         # return self
 
     def maximum_size(self, maximum_size: int) -> CacheBuilder:
-        raise NotImplemented()
+        raise NotImplementedError()
         # return self
